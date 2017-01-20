@@ -19,5 +19,7 @@ node {
 
    stage('Results') {
       archive 'target/*.jar'
+      slackSend channel: '#jenkins', color: 'good', message: 'Build : Success!', teamDomain: 'projectlovelive', token: 'abhne29hLzVkgd9kkIQDrjp8'
+
    }
 }
